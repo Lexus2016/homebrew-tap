@@ -7,7 +7,7 @@ class Localguard < Formula
   on_macos do
     on_arm do
       url "https://github.com/Lexus2016/LocalGuard/releases/download/v0.2.4/llm-security-proxy-v0.2.4-aarch64-apple-darwin.tar.gz"
-      sha256 "3d68132cc507aa44805d1fc2be4ae3e4b272b05c9be6298cd9f83e36dccf2b54"
+      sha256 "762f9d92dd61a51b1b62807f54f19b6f91e8f852767c412aee420f419057aa01"
     end
   end
 
