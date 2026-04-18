@@ -1,13 +1,13 @@
 class Localguard < Formula
   desc "Transparent HTTP proxy that redacts secrets before they reach LLM providers"
   homepage "https://github.com/Lexus2016/LocalGuard"
-  version "0.3.0"
+  version "0.3.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/Lexus2016/LocalGuard/releases/download/v0.3.0/llm-security-proxy-v0.3.0-aarch64-apple-darwin.tar.gz"
-      sha256 "58dbd4dcf8772d9184d023f8bb669b6697b2b7cc87a8a12295cb8faabf2c7bae"
+      url "https://github.com/Lexus2016/LocalGuard/releases/download/v0.3.2/llm-security-proxy-v0.3.2-aarch64-apple-darwin.tar.gz"
+      sha256 "e6c67a2aec376530254ebed825de26df116d1c393e94bb28338ce0c9d1f9a39f"
     end
   end
 
