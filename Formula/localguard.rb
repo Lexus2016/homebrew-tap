@@ -1,24 +1,24 @@
 class Localguard < Formula
   desc "Transparent HTTP proxy that redacts secrets before they reach LLM providers"
   homepage "https://github.com/Lexus2016/LocalGuard"
-  version "0.3.5"
+  version "0.3.6"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/Lexus2016/LocalGuard/releases/download/v0.3.5/llm-security-proxy-v0.3.5-aarch64-apple-darwin.tar.gz"
-      sha256 "7838aa21225c2418464bdfbd55fd7231add8b1934c1e2be3e7ac7172e4dbdf96"
+      url "https://github.com/Lexus2016/LocalGuard/releases/download/v0.3.6/llm-security-proxy-v0.3.6-aarch64-apple-darwin.tar.gz"
+      sha256 "b1ee9a23047638408c3bee89fc59710e29696c3dfa7c0bf8a170878550d01ee1"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/Lexus2016/LocalGuard/releases/download/v0.3.5/llm-security-proxy-v0.3.5-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "89badb0c44b5469e9f61d8629e79a15032a316996bfd8af8d42530b333e2a975"
+      url "https://github.com/Lexus2016/LocalGuard/releases/download/v0.3.6/llm-security-proxy-v0.3.6-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "0a76fa8c4d38ecb4bb11923356aa7763b799eb9ddcbd3b8ea91af923cae36289"
     end
     on_intel do
-      url "https://github.com/Lexus2016/LocalGuard/releases/download/v0.3.5/llm-security-proxy-v0.3.5-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "189443e967e80ac5bc5e0ca2223249e45a97cb181dc2cd2e08a48400fb3cab1f"
+      url "https://github.com/Lexus2016/LocalGuard/releases/download/v0.3.6/llm-security-proxy-v0.3.6-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "29b116b5d56e086ec1cee04d900ea0b4631f8d7bbc273901841fbb729754af8a"
     end
   end
 
