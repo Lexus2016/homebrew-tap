@@ -7,17 +7,19 @@ class Localguard < Formula
   on_macos do
     on_arm do
       url "https://github.com/Lexus2016/LocalGuard/releases/download/v0.5.0/llm-security-proxy-v0.5.0-aarch64-apple-darwin.tar.gz"
-      sha256 "70e3bf9f21627df2f99d3ff8d73d966e5c7493c6bd2fd4735ff9c48b3fdac37c"
+      sha256 "b3783f3d7ae195eda5af38936b83e4674703bd1992f45610d2a5d3e1bcd29921"
     end
   end
 
   on_linux do
+    on_arm do
+      url "https://github.com/Lexus2016/LocalGuard/releases/download/v0.5.0/llm-security-proxy-v0.5.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "d37726e3145dd3e4ec3d6dea3b63ddde72dd106ac15901baea30480f821f5587"
+    end
     on_intel do
       url "https://github.com/Lexus2016/LocalGuard/releases/download/v0.5.0/llm-security-proxy-v0.5.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "b6654394fdf202545ca6c894f47ceb3f3ffceff2bc627197cb20795aed72d5cd"
+      sha256 "66ee396998f3cb40685efed447f73241b3ff272b533bfac1857fb21577c9db9f"
     end
-    # Linux ARM (Raspberry Pi, etc.) — temporarily removed for v0.5.0;
-    # the cross-compile slot was empty on this release.  Restored in v0.5.1.
   end
 
   def install
