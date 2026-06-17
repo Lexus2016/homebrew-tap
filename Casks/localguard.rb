@@ -1,13 +1,13 @@
 cask "localguard" do
-  version "0.5.1"
-  sha256 "004c5545da179681e289ebe4d5369372c3e5414df81c0aaa56534202169a960c"
+  version "0.6.0"
+  sha256 "6b763de3bfb08718cb95c615d99c3cbfefd5252598c079904ce65a9445a2042a"
 
   url "https://github.com/Lexus2016/LocalGuard/releases/download/v#{version}/LocalGuard_#{version}_aarch64.dmg"
   name "LocalGuard"
   desc "LLM Security Proxy — redacts secrets before they reach AI providers"
   homepage "https://github.com/Lexus2016/LocalGuard"
 
-  depends_on macos: ">= :catalina"
+  depends_on macos: :catalina
   depends_on arch: :arm64
 
   app "LocalGuard.app"
