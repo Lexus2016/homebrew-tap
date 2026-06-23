@@ -24,6 +24,9 @@ class Localguard < Formula
 
   def install
     bin.install "llm-security-proxy"
+    # Brand-friendly command name: README and localguard.me use `localguard`.
+    # Keep the legacy `llm-security-proxy` name working too.
+    bin.install_symlink bin/"llm-security-proxy" => "localguard"
     # Install NER models if present in the archive
     if File.directory?("models")
       (share/"localguard/models").install Dir["models/*"]
@@ -52,5 +55,6 @@ class Localguard < Formula
 
   test do
     assert_match version.to_s, shell_output("#{bin}/llm-security-proxy --version")
+    assert_match version.to_s, shell_output("#{bin}/localguard --version")
   end
 end
