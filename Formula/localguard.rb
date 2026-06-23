@@ -28,9 +28,7 @@ class Localguard < Formula
     # Keep the legacy `llm-security-proxy` name working too.
     bin.install_symlink bin/"llm-security-proxy" => "localguard"
     # Install NER models if present in the archive
-    if File.directory?("models")
-      (share/"localguard/models").install Dir["models/*"]
-    end
+    (share/"localguard/models").install Dir["models/*"] if File.directory?("models")
   end
 
   def post_install
@@ -40,9 +38,7 @@ class Localguard < Formula
     user_models = Pathname.new(Dir.home)/".llm-proxy/models"
     unless user_models.exist?
       user_models.dirname.mkpath
-      if (share/"localguard/models").exist?
-        user_models.make_symlink(share/"localguard/models")
-      end
+      user_models.make_symlink(share/"localguard/models") if (share/"localguard/models").exist?
     end
   end
 
