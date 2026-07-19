@@ -1,6 +1,6 @@
 cask "localguard" do
-  version "0.6.4"
-  sha256 "d3b9f6f0ff7b47c3cfda942a790a0491f833a8cf6f80cd2e61136d97431798d6"
+  version "0.6.5"
+  sha256 "2a24f77daa5223e73dd3c23aa8ebe0436912ae03591841351825f77ab5de44a4"
 
   url "https://github.com/Lexus2016/LocalGuard/releases/download/v#{version}/LocalGuard_#{version}_aarch64.dmg"
   name "LocalGuard"
